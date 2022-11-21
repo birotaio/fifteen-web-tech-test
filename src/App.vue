@@ -41,7 +41,6 @@ function close () {
 }
 
 function toggleDarkMode() {
-  // toggle // localStorage
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
   localStorage.setItem('theme', theme.global.name.value);
   map.value.changeTheme(theme.global.name.value);
